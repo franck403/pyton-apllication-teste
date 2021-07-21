@@ -186,19 +186,19 @@ ECRAN = Entry(fen, width=30, textvariable=calculatrice.entry, bg="black", fg="wh
                                                                                                                  y=10)
 
 # // Bouttons //
-B1 = Button(fen, text="1", command=Button1, width=3, height=2, bg="grey", fg="white").place(x=10, y=40)  # Boutton 1
-B2 = Button(fen, text="2", command=Button2, width=3, height=2, bg="grey", fg="white").place(x=50, y=40)  # Boutton 2
-B3 = Button(fen, text="3", command=Button3, width=3, height=2, bg="grey", fg="white").place(x=90, y=40)  # Boutton 3
-B4 = Button(fen, text="4", command=Button4, width=3, height=2, bg="grey", fg="white").place(x=10, y=90)  # Boutton 4
-B5 = Button(fen, text="5", command=Button5, width=3, height=2, bg="grey", fg="white").place(x=50, y=90)  # Boutton 5
-B6 = Button(fen, text="6", command=Button6, width=3, height=2, bg="grey", fg="white").place(x=90, y=90)  # Boutton 6
-B7 = Button(fen, text="7", command=Button7, width=3, height=2, bg="grey", fg="white").place(x=10, y=140)  # Boutton 7
-B8 = Button(fen, text="8", command=Button8, width=3, height=2, bg="grey", fg="white").place(x=50, y=140)  # Boutton 8
-B9 = Button(fen, text="9", command=Button9, width=3, height=2, bg="grey", fg="white").place(x=90, y=140)  # Boutton 9
-BC = Button(fen, text="C", command=ButtonC, width=3, height=2, bg="gold", fg="red", relief=RIDGE).place(x=10,
+B1 = Button(fen, text="1", command=Button1, width=4, height=3, bg="grey", fg="white").place(x=10, y=40)  # Boutton 1
+B2 = Button(fen, text="2", command=Button2, width=4, height=3, bg="grey", fg="white").place(x=50, y=40)  # Boutton 2
+B3 = Button(fen, text="3", command=Button3, width=4, height=3, bg="grey", fg="white").place(x=90, y=40)  # Boutton 3
+B4 = Button(fen, text="4", command=Button4, width=4, height=3, bg="grey", fg="white").place(x=10, y=90)  # Boutton 4
+B5 = Button(fen, text="5", command=Button5, width=4, height=3, bg="grey", fg="white").place(x=50, y=90)  # Boutton 5
+B6 = Button(fen, text="6", command=Button6, width=4, height=3, bg="grey", fg="white").place(x=90, y=90)  # Boutton 6
+B7 = Button(fen, text="7", command=Button7, width=4, height=3, bg="grey", fg="white").place(x=10, y=140)  # Boutton 7
+B8 = Button(fen, text="8", command=Button8, width=4, height=3, bg="grey", fg="white").place(x=50, y=140)  # Boutton 8
+B9 = Button(fen, text="9", command=Button9, width=4, height=3, bg="grey", fg="white").place(x=90, y=140)  # Boutton 9
+BC = Button(fen, text="C", command=ButtonC, width=4, height=3, bg="gold", fg="red", relief=RIDGE).place(x=10,
                                                                                                         y=190)  # Boutton C (Clear)
-B0 = Button(fen, text="0", command=Button0, width=3, height=2, bg="grey", fg="white").place(x=50, y=190)  # Boutton 0
-BF = Button(fen, text=".", command=ButtonF, width=3, height=2, bg="grey", fg="white").place(x=90,
+B0 = Button(fen, text="0", command=Button0, width=4, height=3, bg="grey", fg="white").place(x=50, y=190)  # Boutton 0
+BF = Button(fen, text=".", command=ButtonF, width=4, height=3, bg="grey", fg="white").place(x=90,
                                                                                             y=190)  # Boutton = (égale)
 
 BP = Button(fen, text="+", command=ButtonP, width=4, height=2, bg="gold", fg="black", relief=GROOVE).place(x=150,
