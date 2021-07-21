@@ -19,7 +19,7 @@ class Calculator():
         self.entry = StringVar()  # Capte les valeurs écrit
         self.text = ""  # Nombre écrir par l'utilisateur
         self.signe = ""  # Type d'opération
-        self.entry.set("opération")
+        self.entry.set("operation")
 
     def init(self):  # Initialisation
         self.phase1 = 0  # Premier nombre
