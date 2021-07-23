@@ -169,7 +169,7 @@ def ButtonC():  # Actionnerle bouton c
 # FENETRE :
 # ----------
 fen = Tk()  # Création de a fenêtr 1e
-fen.geometry("200x240")  # Définition de la fenêtre
+fen.geometry("210x250")  # Définition de la fenêtre
 fen.title("Calculatrice by franck and skool090")  # Titre de la calculatrice
 fen["bg"] = "SkyBlue2"  # Coleur de la fenêtre
 fen["relief"] = "raised"  # Profondeur de la fenêtre
