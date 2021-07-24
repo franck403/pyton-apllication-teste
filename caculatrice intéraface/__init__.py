@@ -19,7 +19,7 @@ class Calculator():
         self.entry = StringVar()  # Capte les valeurs écrit
         self.text = ""  # Nombre écrir par l'utilisateur
         self.signe = ""  # Type d'opération
-        self.entry.set("Create by DeltaK v1.00 06/06/18")
+        self.entry.set("operation")
 
     def init(self):  # Initialisation
         self.phase1 = 0  # Premier nombre
@@ -169,9 +169,9 @@ def ButtonC():  # Actionnerle bouton c
 # FENETRE :
 # ----------
 fen = Tk()  # Création de a fenêtr 1e
-fen.geometry("200x240")  # Définition de la fenêtre
-fen.title("Calculatrice by franck and skool090")  # Titre de la calculatrice
-fen["bg"] = "SkyBlue2"  # Coleur de la fenêtre
+fen.geometry("210x260")  # Définition de la fenêtre
+fen.title("Calculatrice by franck ")  # Titre de la calculatrice
+fen["bg"] = "red"  # Couleur de la fenêtre
 fen["relief"] = "raised"  # Profondeur de la fenêtre
 # ------------
 # PROGRAMME :
@@ -186,30 +186,30 @@ ECRAN = Entry(fen, width=30, textvariable=calculatrice.entry, bg="black", fg="wh
                                                                                                                  y=10)
 
 # // Bouttons //
-B1 = Button(fen, text="1", command=Button1, width=3, height=2, bg="grey", fg="white").place(x=10, y=40)  # Boutton 1
-B2 = Button(fen, text="2", command=Button2, width=3, height=2, bg="grey", fg="white").place(x=50, y=40)  # Boutton 2
-B3 = Button(fen, text="3", command=Button3, width=3, height=2, bg="grey", fg="white").place(x=90, y=40)  # Boutton 3
-B4 = Button(fen, text="4", command=Button4, width=3, height=2, bg="grey", fg="white").place(x=10, y=90)  # Boutton 4
-B5 = Button(fen, text="5", command=Button5, width=3, height=2, bg="grey", fg="white").place(x=50, y=90)  # Boutton 5
-B6 = Button(fen, text="6", command=Button6, width=3, height=2, bg="grey", fg="white").place(x=90, y=90)  # Boutton 6
-B7 = Button(fen, text="7", command=Button7, width=3, height=2, bg="grey", fg="white").place(x=10, y=140)  # Boutton 7
-B8 = Button(fen, text="8", command=Button8, width=3, height=2, bg="grey", fg="white").place(x=50, y=140)  # Boutton 8
-B9 = Button(fen, text="9", command=Button9, width=3, height=2, bg="grey", fg="white").place(x=90, y=140)  # Boutton 9
-BC = Button(fen, text="C", command=ButtonC, width=3, height=2, bg="gold", fg="red", relief=RIDGE).place(x=10,
+B1 = Button(fen, text="1", command=Button1, width=4, height=3, bg="white", fg="black").place(x=10, y=40)  # Boutton 1
+B2 = Button(fen, text="2", command=Button2, width=4, height=3, bg="white", fg="black").place(x=50, y=40)  # Boutton 2
+B3 = Button(fen, text="3", command=Button3, width=4, height=3, bg="white", fg="black").place(x=90, y=40)  # Boutton 3
+B4 = Button(fen, text="4", command=Button4, width=4, height=3, bg="white", fg="black").place(x=10, y=90)  # Boutton 4
+B5 = Button(fen, text="5", command=Button5, width=4, height=3, bg="white", fg="black").place(x=50, y=90)  # Boutton 5
+B6 = Button(fen, text="6", command=Button6, width=4, height=3, bg="white", fg="black").place(x=90, y=90)  # Boutton 6
+B7 = Button(fen, text="7", command=Button7, width=4, height=3, bg="white", fg="black").place(x=10, y=140)  # Boutton 7
+B8 = Button(fen, text="8", command=Button8, width=4, height=3, bg="white", fg="black").place(x=50, y=140)  # Boutton 8
+B9 = Button(fen, text="9", command=Button9, width=4, height=3, bg="white", fg="black").place(x=90, y=140)  # Boutton 9
+BC = Button(fen, text="C", command=ButtonC, width=4, height=3, bg="white", fg="black", relief=RIDGE).place(x=10,
                                                                                                         y=190)  # Boutton C (Clear)
-B0 = Button(fen, text="0", command=Button0, width=3, height=2, bg="grey", fg="white").place(x=50, y=190)  # Boutton 0
-BF = Button(fen, text=".", command=ButtonF, width=3, height=2, bg="grey", fg="white").place(x=90,
+B0 = Button(fen, text="0", command=Button0, width=4, height=3, bg="white", fg="black").place(x=50, y=190)  # Boutton 0
+BF = Button(fen, text=".", command=ButtonF, width=4, height=3, bg="white", fg="black").place(x=90,
                                                                                             y=190)  # Boutton = (égale)
 
-BP = Button(fen, text="+", command=ButtonP, width=4, height=2, bg="gold", fg="black", relief=GROOVE).place(x=150,
+BP = Button(fen, text="+", command=ButtonP, width=4, height=3, bg="Grey", fg="black", relief=RIDGE).place(x=150,
                                                                                                            y=40)  # Boutton + (addition)
-BS = Button(fen, text="-", command=ButtonS, width=4, height=2, bg="gold", fg="black", relief=GROOVE).place(x=150,
+BS = Button(fen, text="-", command=ButtonS, width=4, height=3, bg="Grey", fg="black", relief=RIDGE).place(x=150,
                                                                                                            y=80)  # Boutton - (soustacrtion)
-BD = Button(fen, text="/", command=ButtonD, width=4, height=2, bg="gold", fg="black", relief=GROOVE).place(x=150,
+BD = Button(fen, text="/", command=ButtonD, width=4, height=3, bg="Grey", fg="black", relief=RIDGE).place(x=150,
                                                                                                            y=120)  # Boutton / (division)
-BM = Button(fen, text="X", command=ButtonM, width=4, height=2, bg="gold", fg="black", relief=GROOVE).place(x=150,
+BM = Button(fen, text="X", command=ButtonM, width=4, height=3, bg="Grey", fg="black", relief=RIDGE).place(x=150,
                                                                                                            y=160)  # Boutton X (multiplication)
-BE = Button(fen, text="=", command=ButtonE, width=4, height=1, bg="blue", fg="white", relief=RIDGE).place(x=150,
+BE = Button(fen, text="=", command=ButtonE, width=4, height=2, bg="blue", fg="white", relief=RIDGE).place(x=150,
                                                                                                           y=205)  # Button = (égale)
 
 fen.mainloop()  # Gestion de la fenêtre
