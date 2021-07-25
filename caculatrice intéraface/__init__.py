@@ -233,5 +233,22 @@ BM = Button(fen, text="X", command=ButtonM, width=4, height=3, bg="Grey", fg="bl
                                                                                                            y=160)  # Boutton X (multiplication)
 BE = Button(fen, text="=", command=ButtonE, width=4, height=2, bg="blue", fg="white", relief=RIDGE).place(x=150,
                                                                                                           y=205)  # Button = (égale)
+ECRAN.grid(row=1, column=0)
+BE.grid(row=1, column=0)
+B1.grid(row=1, column=0)
+B2.grid(row=1, column=0)
+B3.grid(row=1, column=0)
+B4.grid(row=1, column=0)
+B5.grid(row=1, column=0)
+B6.grid(row=1, column=0)
+B7.grid(row=1, column=0)
+B8.grid(row=1, column=0)
+B9.grid(row=1, column=0)
+B0.grid(row=1, column=0)
+BF.grid(row=1, column=0)
+BS.grid(row=1, column=0)
+BD.grid(row=1, column=0)
+BM.grid(row=1, column=0)
+BE.grid(row=1, column=0)
 
 fen.mainloop()  # Gestion de la fenêtre
