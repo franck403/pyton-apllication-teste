@@ -191,7 +191,7 @@ def ButtonC():  # Actionnerle bouton c
 # FENETRE :
 # ----------
 fen = Tk()  # Création de a fenêtre 1e
-fen.geometry("210x260")  # Définition de la fenêtre
+fen.geometry("250x270")  # Définition de la fenêtre
 fen.title("Calculatrice by franck ")  # Titre de la calculatrice
 fen.resizable(1, 1)
 fen["bg"] = "red"  # Couleur de la fenêtre
@@ -211,30 +211,32 @@ Grid.rowconfigure(fen,4,weight=1)
 Grid.columnconfigure(fen,0,weight=1)
 Grid.columnconfigure(fen,1,weight=1)
 Grid.columnconfigure(fen,2,weight=1)
-Grid.columnconfigure(fen,3,weight=1)
+Grid.columnconfigure(fen,3,weight=1, minsize=60)
 
 
 # ATTRIBUTS DE LA FENETRE
 #########################
 # // Ecran calculatrice //
-ECRAN = Entry(fen, width=30, textvariable=calculatrice.entry, bg="black", fg="white", relief=SUNKEN, bd=6, state=DISABLED).grid(row=0, column=0, columnspan=3, sticky="nsew")
+ECRAN = Entry(fen, width=30,font="4", textvariable=calculatrice.entry, bg="black", fg="white", relief=SUNKEN, bd=6, state=DISABLED).grid(row=0, column=0, columnspan=3, sticky="nsew")
 
 # // Bouttons //
-B1 = Button(fen, text="1", command=Button1, bg="white", fg="black").grid(row=1, column=0, sticky="nsew")  # Boutton 1
-B2 = Button(fen, text="2", command=Button2, bg="white", fg="black").grid(row=1, column=1, sticky="nsew")  # Boutton 2
-B3 = Button(fen, text="3", command=Button3, bg="white", fg="black").grid(row=1, column=2, sticky="nsew")  # Boutton 3
-B4 = Button(fen, text="4", command=Button4, bg="white", fg="black").grid(row=2, column=0, sticky="nsew")  # Boutton 4
-B5 = Button(fen, text="5", command=Button5, bg="white", fg="black").grid(row=2, column=1, sticky="nsew")  # Boutton 5
-B6 = Button(fen, text="6", command=Button6, bg="white", fg="black").grid(row=2, column=2, sticky="nsew") # Boutton 6
-B7 = Button(fen, text="7", command=Button7, bg="white", fg="black").grid(row=3, column=0, sticky="nsew")  # Boutton 7
-B8 = Button(fen, text="8", command=Button8, bg="white", fg="black").grid(row=3, column=1, sticky="nsew")  # Boutton 8
-B9 = Button(fen, text="9", command=Button9, bg="white", fg="black").grid(row=3, column=2, sticky="nsew")  # Boutton 9
-BC = Button(fen, text="C", command=ButtonC, bg="white", fg="black", relief=RIDGE).grid(row=4, column=0, sticky="nsew")  # Boutton C (Clear)
-B0 = Button(fen, text="0", command=Button0, bg="white", fg="black").grid(row=4, column=1, sticky="nsew")  # Boutton 0
-BF = Button(fen, text=".", command=ButtonF, bg="white", fg="black").grid(row=4, column=2, sticky="nsew")  # Boutton = (égale)
+B1 = Button(fen, text="1", font="4", command=Button1, bg="white", fg="black").grid(row=1, column=0, sticky="nsew")  # Boutton 1
+B2 = Button(fen, text="2", font="4", command=Button2, bg="white", fg="black").grid(row=1, column=1, sticky="nsew")  # Boutton 2
+B3 = Button(fen, text="3", font="4", command=Button3, bg="white", fg="black").grid(row=1, column=2, sticky="nsew")  # Boutton 3
+B4 = Button(fen, text="4", font="4", command=Button4, bg="white", fg="black").grid(row=2, column=0, sticky="nsew")  # Boutton 4
+B5 = Button(fen, text="5", font="4", command=Button5, bg="white", fg="black").grid(row=2, column=1, sticky="nsew")  # Boutton 5
+B6 = Button(fen, text="6", font="4", command=Button6, bg="white", fg="black").grid(row=2, column=2, sticky="nsew") # Boutton 6
+B7 = Button(fen, text="7", font="4", command=Button7, bg="white", fg="black").grid(row=3, column=0, sticky="nsew")  # Boutton 7
+B8 = Button(fen, text="8", font="4", command=Button8, bg="white", fg="black").grid(row=3, column=1, sticky="nsew")  # Boutton 8
+B9 = Button(fen, text="9", font="4", command=Button9, bg="white", fg="black").grid(row=3, column=2, sticky="nsew")  # Boutton 9
+BC = Button(fen, text="C", font="4", command=ButtonC, bg="white", fg="black", relief=RIDGE).grid(row=4, column=0, sticky="nsew")  # Boutton C (Clear)
+B0 = Button(fen, text="0", font="4", command=Button0, bg="white", fg="black").grid(row=4, column=1, sticky="nsew")  # Boutton 0
+BF = Button(fen, text=".", font="4", command=ButtonF, bg="white", fg="black").grid(row=4, column=2, sticky="nsew")  # Boutton = (égale)
 
-BP = Button(fen, text="+", command=ButtonP, bg="Grey", fg="black", relief=RIDGE).grid(row=1, column=3, sticky="nsew")  # Boutton + (addition)
-BS = Button(fen, text="-", command=ButtonS, bg="Grey", fg="black", relief=RIDGE).grid(row=2, column=3, sticky="nsew")  # Boutton - (soustacrtion)
-BD = Button(fen, text="/", command=ButtonD, bg="Grey", fg="black", relief=RIDGE).grid(row=3, column=3, sticky="nsew")  # Boutton / (division)
-BM = Button(fen, text="X", command=ButtonM, bg="Grey", fg="black", relief=RIDGE).grid(row=4, column=3, sticky="nsew")  # Boutton X (multiplication)
-BE = Button(fen, text="=", command=ButtonE, bg="blue", fg="white", relief=RIDGE).grid(row=0, column=3, sticky="nsew")  # Button = (égale)
+BP = Button(fen, text="+", font="4", command=ButtonP, bg="Grey", fg="black", relief=RIDGE).grid(row=1, column=3, sticky="nsew")  # Boutton + (addition)
+BS = Button(fen, text="-", font="4", command=ButtonS, bg="Grey", fg="black", relief=RIDGE).grid(row=2, column=3, sticky="nsew")  # Boutton - (soustacrtion)
+BD = Button(fen, text="/", font="4", command=ButtonD, bg="Grey", fg="black", relief=RIDGE).grid(row=3, column=3, sticky="nsew")  # Boutton / (division)
+BM = Button(fen, text="X", font="4", command=ButtonM, bg="Grey", fg="black", relief=RIDGE).grid(row=4, column=3, sticky="nsew")  # Boutton X (multiplication)
+BE = Button(fen, text="=", font="4", command=ButtonE, bg="blue", fg="white", relief=RIDGE).grid(row=0, column=3, sticky="nsew")  # Button = (égale)
+
+fen.mainloop()
