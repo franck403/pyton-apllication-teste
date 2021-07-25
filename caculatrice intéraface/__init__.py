@@ -168,7 +168,7 @@ def ButtonC():  # Actionnerle bouton c
 # ----------
 # FENETRE :
 # ----------
-fen = Tk()  # Création de a fenêtr 1e
+fen = Tk()  # Création de a fenêtre 1e
 fen.geometry("210x260")  # Définition de la fenêtre
 fen.title("Calculatrice by franck ")  # Titre de la calculatrice
 fen["bg"] = "red"  # Couleur de la fenêtre
@@ -182,8 +182,8 @@ calculatrice = Calculator()
 # ATTRIBUTS DE LA FENETRE
 #########################
 # // Ecran calculatrice //
-ECRAN = Entry(fen, width=30, textvariable=calculatrice.entry, bg="black", fg="white", relief=SUNKEN, bd=6).place(x=12,
-                                                                                                                 y=10)
+ECRAN = Entry(fen, width=30, textvariable=calculatrice.entry, bg="black", fg="white", relief=SUNKEN, bd=6).place(x=10,
+                                                                                                                 y=7)
 
 # // Bouttons //
 B1 = Button(fen, text="1", command=Button1, width=4, height=3, bg="white", fg="black").place(x=10, y=40)  # Boutton 1
@@ -195,7 +195,7 @@ B6 = Button(fen, text="6", command=Button6, width=4, height=3, bg="white", fg="b
 B7 = Button(fen, text="7", command=Button7, width=4, height=3, bg="white", fg="black").place(x=10, y=140)  # Boutton 7
 B8 = Button(fen, text="8", command=Button8, width=4, height=3, bg="white", fg="black").place(x=50, y=140)  # Boutton 8
 B9 = Button(fen, text="9", command=Button9, width=4, height=3, bg="white", fg="black").place(x=90, y=140)  # Boutton 9
-BC = Button(fen, text="C", command=ButtonC, width=4, height=3, bg="white", fg="black", relief=RIDGE).place(x=10,
+BC = Button(fen, text="C", command=ButtonC, width=4, height=3, bg="Grey", fg="white", relief=RIDGE).place(x=10,
                                                                                                         y=190)  # Boutton C (Clear)
 B0 = Button(fen, text="0", command=Button0, width=4, height=3, bg="white", fg="black").place(x=50, y=190)  # Boutton 0
 BF = Button(fen, text=".", command=ButtonF, width=4, height=3, bg="white", fg="black").place(x=90,
