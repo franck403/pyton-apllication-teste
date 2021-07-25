@@ -50,6 +50,13 @@ class Calculator():
         self.phase1 = float(nb[0])
         self.phase2 = float(nb[1])
         self.final = self.phase1 + self.phase2
+
+
+        dec = str(self.final).split(".")[1]
+        if(dec == "0"):
+            self.final = str(self.final).split(".")[0]
+
+
         self.entry.set(str(self.final))
         self.init()
 
@@ -58,6 +65,11 @@ class Calculator():
         self.phase1 = float(nb[0])
         self.phase2 = float(nb[1])
         self.final = self.phase1 - self.phase2
+
+        dec = str(self.final).split(".")[1]
+        if (dec == "0"):
+            self.final = str(self.final).split(".")[0]
+
         self.entry.set(str(self.final))
         self.init()
 
@@ -66,6 +78,11 @@ class Calculator():
         self.phase1 = float(nb[0])
         self.phase2 = float(nb[1])
         self.final = self.phase1 / self.phase2
+
+        dec = str(self.final).split(".")[1]
+        if (dec == "0"):
+            self.final = str(self.final).split(".")[0]
+
         self.entry.set(str(self.final))
         self.init()
 
@@ -74,6 +91,11 @@ class Calculator():
         self.phase1 = float(nb[0])
         self.phase2 = float(nb[1])
         self.final = self.phase1 * self.phase2
+
+        dec = str(self.final).split(".")[1]
+        if (dec == "0"):
+            self.final = str(self.final).split(".")[0]
+
         self.entry.set(str(self.final))
         self.init()
 
@@ -182,7 +204,7 @@ calculatrice = Calculator()
 # ATTRIBUTS DE LA FENETRE
 #########################
 # // Ecran calculatrice //
-ECRAN = Entry(fen, width=30, textvariable=calculatrice.entry, bg="black", fg="white", relief=SUNKEN, bd=6).place(x=10,
+ECRAN = Entry(fen, width=30, textvariable=calculatrice.entry, bg="black", fg="white", relief=SUNKEN, bd=6, state=DISABLED) .place(x=10,
                                                                                                                  y=7)
 
 # // Bouttons //
