@@ -50,6 +50,13 @@ class Calculator():
         self.phase1 = float(nb[0])
         self.phase2 = float(nb[1])
         self.final = self.phase1 + self.phase2
+
+
+        dec = str(self.final).split(".")[1]
+        if(dec == "0"):
+            self.final = str(self.final).split(".")[0]
+
+
         self.entry.set(str(self.final))
         self.init()
 
@@ -58,6 +65,11 @@ class Calculator():
         self.phase1 = float(nb[0])
         self.phase2 = float(nb[1])
         self.final = self.phase1 - self.phase2
+
+        dec = str(self.final).split(".")[1]
+        if (dec == "0"):
+            self.final = str(self.final).split(".")[0]
+
         self.entry.set(str(self.final))
         self.init()
 
@@ -66,6 +78,11 @@ class Calculator():
         self.phase1 = float(nb[0])
         self.phase2 = float(nb[1])
         self.final = self.phase1 / self.phase2
+
+        dec = str(self.final).split(".")[1]
+        if (dec == "0"):
+            self.final = str(self.final).split(".")[0]
+
         self.entry.set(str(self.final))
         self.init()
 
@@ -74,6 +91,11 @@ class Calculator():
         self.phase1 = float(nb[0])
         self.phase2 = float(nb[1])
         self.final = self.phase1 * self.phase2
+
+        dec = str(self.final).split(".")[1]
+        if (dec == "0"):
+            self.final = str(self.final).split(".")[0]
+
         self.entry.set(str(self.final))
         self.init()
 
@@ -182,7 +204,7 @@ calculatrice = Calculator()
 # ATTRIBUTS DE LA FENETRE
 #########################
 # // Ecran calculatrice //
-ECRAN = Entry(fen, width=30, textvariable=calculatrice.entry, bg="black", fg="white", relief=SUNKEN, bd=6).place(x=10,
+ECRAN = Entry(fen, width=30, textvariable=calculatrice.entry, bg="black", fg="white", relief=SUNKEN, bd=6, state=DISABLED) .place(x=10,
                                                                                                                  y=7)
 
 # // Bouttons //
@@ -211,5 +233,22 @@ BM = Button(fen, text="X", command=ButtonM, width=4, height=3, bg="Grey", fg="bl
                                                                                                            y=160)  # Boutton X (multiplication)
 BE = Button(fen, text="=", command=ButtonE, width=4, height=2, bg="blue", fg="white", relief=RIDGE).place(x=150,
                                                                                                           y=205)  # Button = (égale)
+ECRAN.grid(row=1, column=0)
+BE.grid(row=1, column=0)
+B1.grid(row=1, column=0)
+B2.grid(row=1, column=0)
+B3.grid(row=1, column=0)
+B4.grid(row=1, column=0)
+B5.grid(row=1, column=0)
+B6.grid(row=1, column=0)
+B7.grid(row=1, column=0)
+B8.grid(row=1, column=0)
+B9.grid(row=1, column=0)
+B0.grid(row=1, column=0)
+BF.grid(row=1, column=0)
+BS.grid(row=1, column=0)
+BD.grid(row=1, column=0)
+BM.grid(row=1, column=0)
+BE.grid(row=1, column=0)
 
 fen.mainloop()  # Gestion de la fenêtre
