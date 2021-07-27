@@ -217,7 +217,7 @@ Grid.columnconfigure(fen,3,weight=1, minsize=60)
 # ATTRIBUTS DE LA FENETRE
 #########################
 # // Ecran calculatrice
-ECRAN = Entry(fen, width=30,font="4", textvariable=calculatrice.entry, bg="black", fg="white", relief=SUNKEN, bd=6, state=DISABLED).grid(row=0, column=0, columnspan=3, sticky="nsew")
+ECRAN = Entry(fen, width=30,font="7", textvariable=calculatrice.entry, bg="black", fg="white", relief=SUNKEN, bd=6, state=DISABLED).grid(row=0, column=0, columnspan=3, sticky="nsew")
 
 # // Bouttons //
 B1 = Button(fen, text="1", font="4", command=Button1, bg="white", fg="black").grid(row=1, column=0, sticky="nsew")  # Boutton 1
