@@ -6,4 +6,4 @@ for i in tqdm(range(101),
               ascii=False, ncols=75):
     time.sleep(0.01)
 
-print("Complete
+print("Complete.")
